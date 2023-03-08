@@ -1,0 +1,46 @@
+.footer {
+  background-color: var(--secondary--light-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.content p {
+  font-size: 24px;
+  text-align: center;
+  line-height: 40.93px;
+}
+
+.content_form {
+  display: flex;
+  align-items: center;
+}
+
+.form_text {
+  font-size: 18px;
+  width: 430px;
+  height: 59px;
+  border-radius: 4px;
+  border: 1px solid rgb(197, 197, 197);
+  padding-left: 20px;
+  background-color: var(--secondary--light-background);
+  margin-right: 15px;
+}
+
+.button {
+  font-size: 18px;
+  width: 190px;
+  height: 59px;
+  background-color: var(--secondary-green);
+}

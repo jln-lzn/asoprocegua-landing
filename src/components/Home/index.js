@@ -1,13 +1,8 @@
 import React from "react"
-import Navbar from "@/components/Navbar"
 import Hero from "./ui/Hero"
 
 const Home = () => {
-  return (
-    <section>
-      <Hero />
-    </section>
-  )
+  return <Hero />
 }
 
 export default Home
