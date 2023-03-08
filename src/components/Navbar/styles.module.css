@@ -58,23 +58,49 @@
   padding: 1rem 2rem;
 }
 
+.mobile_container {
+  flex: 1;
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.mobile_icon {
+  background-color: var(--primary-green);
+  width: 1.7rem;
+  height: 3px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 1200px) {
   .menu_container {
     gap: 2rem;
   }
-   
 }
 
 @media screen and (max-width: 1000px) {
   .menu_container {
     gap: 1.5rem;
   }
-   
 }
 
 @media screen and (max-width: 875px) {
+  .logo_container {
+    justify-content: flex-start;
+  }
+
   .menu_container {
     display: none;
   }
-   
+
+  .actions_container {
+    display: none;
+  }
+
+  .mobile_container {
+    display: flex;
+  }
 }

@@ -1,11 +1,10 @@
-import React from 'react'
-import Navbar from '@/components/Navbar'
-import Hero from './ui/Hero'
+import React from "react"
+import Navbar from "@/components/Navbar"
+import Hero from "./ui/Hero"
 
 const Home = () => {
   return (
     <section>
-      <Navbar />
       <Hero />
     </section>
   )
