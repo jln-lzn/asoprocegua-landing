@@ -23,7 +23,7 @@ const Navbar = () => {
       route: "/proyectos",
     },
     {
-      label: "Plantas Amazónicas",
+      label: "Beneficios Plantas Amazónicas",
       route: "/plantas-amazonicas",
     },
   ]
