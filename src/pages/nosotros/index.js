@@ -1,5 +1,5 @@
-const nosotros = () => {
-  return <div>Enter</div>
+const Nosotros = () => {
+  return <section>nosotros</section>
 }
 
-export default nosotros
+export default Nosotros
