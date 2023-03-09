@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <section className="bg-[#fdfdfd]">
-      <div className="flex items-center justify-center font-sans md:h-screen relative">
+      <div className="flex items-center justify-center font-sans md:py-36 relative">
         <img
           src={left_plant}
           className="absolute top-50 left-0 z-0 opacity-30 2xl:opacity-100"

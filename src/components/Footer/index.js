@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 const Footer = () => {
   const grass_footer = "/images/grass footer.svg"
   const rock_footer = "/images/rock footer.svg"
@@ -35,7 +33,7 @@ const Footer = () => {
       <div className="relative">
         <img
           src={rock_footer}
-          className="absolute left-0 top-[-60px] sm:top-auto w-full sm:left-auto sm:right-[40px] sm:w-[440px] lg:w-[836px] lg:h-[255px]"
+          className="absolute top-[-60px] sm:top-auto w-full sm:left-auto sm:right-[40px] md:right-0 sm:w-[440px] lg:w-[836px] lg:h-[255px]"
         />
         <img className="w-full" src={grass_footer} />
         <div className="flex justify-start lg:justify-around flex-col lg:flex-row items-start lg:items-center gap-5 px-5 py-16 bg-green-text text-white">

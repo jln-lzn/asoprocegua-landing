@@ -9,7 +9,7 @@ const Beneficios = () => {
     <section className="grid grid-cols-fluid items-center bg-[#fdfdfd] justify-center gap-3 px-5 font-sans md:py-36">
       <div className="flex justify-center items-center flex-col">
         <Image src={fruit1} width={271} height={181} />
-        <div className="flex justify-start text-lg py-10 flex-col bg-gradient-to-b from-[#e8e7e8] to-[#f8f8f8] px-8 rounded-lg h-[440px] border border-[#f8f8f8]">
+        <div className="flex justify-start text-lg py-10 flex-col bg-[#F8F8F8] px-8 rounded-lg h-[440px] border border-[#f8f8f8]">
           <h3 className="mb-4">
             Beneficios del <span className="font-bold text-2xl ml-2">Asaí</span>
           </h3>
@@ -30,7 +30,7 @@ const Beneficios = () => {
       </div>
       <div className="flex justify-center items-center flex-col">
         <Image src={fruit2} width={222} height={176} />
-        <div className="flex justify-start text-lg py-10 flex-col bg-gradient-to-b from-[#e8e7e8] to-[#f8f8f8] px-8 rounded-lg h-[440px] border border-[#f8f8f8]">
+        <div className="flex justify-start text-lg py-10 flex-col bg-[#F8F8F8] px-8 rounded-lg h-[440px] border border-[#f8f8f8]">
           <h3 className="mb-4">
             Beneficios del <span className="font-bold text-2xl ml-2">Seje</span>
           </h3>
@@ -48,7 +48,7 @@ const Beneficios = () => {
       </div>
       <div className="flex justify-center items-center flex-col">
         <Image src={fruit3} width={268} height={182} />
-        <div className="flex justify-start text-lg py-10 flex-col bg-gradient-to-b from-[#e8e7e8] to-[#f8f8f8] px-8 rounded-lg h-[440px] border border-[#f8f8f8]">
+        <div className="flex justify-start text-lg py-10 flex-col bg-[#F8F8F8] px-8 rounded-lg h-[440px] border border-[#f8f8f8]">
           <h3 className="mb-4">
             Beneficios del{" "}
             <span className="font-bold text-2xl ml-2">Moriche</span>

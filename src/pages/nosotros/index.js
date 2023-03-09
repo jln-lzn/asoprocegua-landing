@@ -1,4 +1,5 @@
 import Hero from "@/components/Nosotros/ui/Hero"
+import Vision from "@/components/Nosotros/ui/Vision"
 import Head from "next/head"
 
 const Nosotros = () => {
@@ -8,6 +9,7 @@ const Nosotros = () => {
         <title>Nosotros | Asoprocegua</title>
       </Head>
       <Hero />
+      <Vision />
     </>
   )
 }

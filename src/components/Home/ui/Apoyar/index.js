@@ -1,7 +1,7 @@
 const Apoyar = () => {
   return (
-    <section className="flex justify-center items-center py-14 font-sans bg-light-bg-2 bg-gradient-to-b from-[#3d7d40] to-[#9dca5500]">
-      <div className="flex justify-center items-center flex-col bg-gradient-to-b from-[#e8e7e8] to-[#f8f8f8] mx-5 rounded-lg px-5 py-16 md:py-56 md:px-8 md:max-w-6xl">
+    <section className="flex justify-center items-center py-14 font-sans bg-light-bg-2 bg-gradient-to-b from-[#3D7D40] to-[#fdfdfd]">
+      <div className="flex justify-center items-center flex-col bg-[#F8F8F8] mx-5 rounded-lg px-5 py-16 md:py-56 md:px-8 md:max-w-6xl">
         <h2 className="text-4xl font-medium text-left md:text-center mb-4">
           ¿Cómo puedes apoyarnos?
         </h2>
@@ -16,7 +16,7 @@ const Apoyar = () => {
           más productos Amazónicos. También buscamos donaciones y proyectos para
           consolidar nuestra asociación.
         </p>
-        <button className="w-full h-[59px] bg-green-text text-[18px] shadow-md shadow-green-text text-white md:hidden">
+        <button className="w-full md:w-[258px] h-[59px] bg-green-text text-[18px] shadow-md shadow-green-text text-white">
           Contáctanos
         </button>
       </div>

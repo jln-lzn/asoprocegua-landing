@@ -22,7 +22,8 @@ module.exports = {
         "green-text-2": "#c1ed7a",
       },
       gridTemplateColumns: {
-        fluid: "repeat(auto-fit, minmax(320px, 1fr))",
+        fluid: "repeat(auto-fit, minmax(360px, 1fr))",
+        card: "repeat(auto-fit, minmax(560px, 1fr))",
       },
     },
   },

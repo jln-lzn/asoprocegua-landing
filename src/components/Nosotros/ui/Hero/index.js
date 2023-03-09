@@ -4,7 +4,7 @@ const Hero = () => {
   const arrow = "/images/arrow.svg"
 
   return (
-    <section className="md:h-screen bg-[#fdfdfd] flex items-center justify-center font-sans">
+    <section className="md:py-36 bg-[#fdfdfd] flex items-center justify-center font-sans">
       <div className="w-full max-w-2xl flex flex-col justify-center items-center gap-5 p-4 md:max-w-6xl">
         <div className="w-full flex justify-start md:justify-center">
           <h2 className="text-left text-4xl leading-10 font-medium md:text-center md:text-6xl">
