@@ -1,5 +1,7 @@
+import Image from "next/image"
+
 const Footer = () => {
-  const bg_footer = "/images/bg footer.svg"
+  const grass_footer = "/images/grass footer.svg"
   const rock_footer = "/images/rock footer.svg"
 
   const phone = "/images/phone.svg"
@@ -8,9 +10,9 @@ const Footer = () => {
   const ig = "/images/ig.svg"
 
   return (
-    <div className="bg-[#fdfdfd] font-sans">
-      <div className="flex items-center justify-center p-5">
-        <div className="w-full max-w-4xl flex justify-center items-center flex-col gap-6">
+    <div className="bg-[#fdfdfd] font-sans mt-20">
+      <div className="flex items-center justify-center px-5 pb-20">
+        <div className="w-full max-w-4xl flex justify-center items-center flex-col gap-6 mb-36">
           <p className="text-left md:text-center text-lg md:text-2xl leading-10 text-disabled-text">
             Te invitamos a que contribuyas con el desarrollo sostenible del
             Guaviare, uno de los departamentos con mayor riesgo de
@@ -30,22 +32,29 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="flex justify-start lg:justify-around flex-col lg:flex-row items-start lg:items-center gap-5 p-5 bg-green-text text-white">
-        <div className="flex gap-2">
-          <img src={phone} />
-          <span>+57 318 7692579</span>
-        </div>
-        <div className="flex gap-2">
-          <img src={mail} />
-          <p>asociacionasoprocegua@gmail.com</p>
-        </div>
-        <div className="flex gap-2">
-          <img src={fb} />
-          <p>asoproceguaguaviare</p>
-        </div>
-        <div className="flex gap-2">
-          <img src={ig} />
-          <p>asoproceguaguaviare</p>
+      <div className="relative">
+        <img
+          src={rock_footer}
+          className="absolute left-0 top-[-60px] sm:top-auto w-full sm:left-auto sm:right-[40px] sm:w-[440px] lg:w-[836px] lg:h-[255px]"
+        />
+        <img className="w-full" src={grass_footer} />
+        <div className="flex justify-start lg:justify-around flex-col lg:flex-row items-start lg:items-center gap-5 px-5 py-16 bg-green-text text-white">
+          <div className="flex gap-2 z-50">
+            <img src={phone} />
+            <span>+57 318 7692579</span>
+          </div>
+          <div className="flex gap-2 z-50">
+            <img src={mail} />
+            <p>asociacionasoprocegua@gmail.com</p>
+          </div>
+          <div className="flex gap-2 z-50">
+            <img src={fb} />
+            <p>asoproceguaguaviare</p>
+          </div>
+          <div className="flex gap-2 z-50">
+            <img src={ig} />
+            <p>asoproceguaguaviare</p>
+          </div>
         </div>
       </div>
     </div>
