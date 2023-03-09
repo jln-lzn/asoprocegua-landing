@@ -1,4 +1,5 @@
 import Hero from "@/components/Proyectos/ui/Hero"
+import ProyectoRem from "@/components/Proyectos/ui/ProyectoRem"
 import Head from "next/head"
 
 const proyectos = () => {
@@ -8,6 +9,7 @@ const proyectos = () => {
         <title>Nuestros Proyectos | Asoprocegua</title>
       </Head>
       <Hero />
+      <ProyectoRem />
     </>
   )
 }
