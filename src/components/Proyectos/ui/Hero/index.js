@@ -1,9 +1,12 @@
+import Image from "next/image"
+
 const Hero = () => {
   const left_plant = "/images/left plant.svg"
   const right_plant = "/images/right plant.svg"
+  const arrow = "/images/arrow.svg"
 
   return (
-    <section className="bg-light-bg-2">
+    <section className="bg-[#fdfdfd]">
       <div className="flex items-center justify-center font-sans md:h-screen relative">
         <img
           src={left_plant}
@@ -28,6 +31,12 @@ const Hero = () => {
           <button className="w-full h-[59px] bg-green-text-2 text-[18px] md:hidden">
             Contáctanos
           </button>
+          <div className="border border-gray-300 rounded-full p-6 cursor-pointer mt-10 hidden md:block">
+            <Image src={arrow} width={24.05} height={24.05} />
+          </div>
+          <div className="w-full flex justify-start md:justify-center mt-20">
+            <hr className="w-full border-t-2 border-[#E8E7E8] border-l-0 border-r-0" />
+          </div>
         </div>
         <img
           src={right_plant}

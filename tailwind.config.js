@@ -21,6 +21,9 @@ module.exports = {
         "green-text": "#146841",
         "green-text-2": "#c1ed7a",
       },
+      gridTemplateColumns: {
+        fluid: "repeat(auto-fit, minmax(320px, 1fr))",
+      },
     },
   },
   plugins: [],

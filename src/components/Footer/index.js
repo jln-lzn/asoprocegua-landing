@@ -8,10 +8,10 @@ const Footer = () => {
   const ig = "/images/ig.svg"
 
   return (
-    <div className="bg-light-bg-2 font-sans">
+    <div className="bg-[#fdfdfd] font-sans">
       <div className="flex items-center justify-center p-5">
         <div className="w-full max-w-4xl flex justify-center items-center flex-col gap-6">
-          <p className="text-left md:text-center text-2xl leading-10 text-disabled-text">
+          <p className="text-left md:text-center text-lg md:text-2xl leading-10 text-disabled-text">
             Te invitamos a que contribuyas con el desarrollo sostenible del
             Guaviare, uno de los departamentos con mayor riesgo de
             deforestación. Las comunidades campesinas estamos listas para
@@ -21,7 +21,7 @@ const Footer = () => {
           <form className="flex flex-col md:flex-row items-center w-full md:justify-center">
             <input
               type="text"
-              className="text-lg w-full mr-0 md:mr-4 mb-4 md:mb-0 rounded bg-light-bg-2 pl-5 border border-[#E8E7E8] outline-none md:w-[430px] h-[59px]"
+              className="text-lg w-full mr-0 md:mr-4 mb-4 md:mb-0 rounded bg-[#fdfdfd] pl-5 border border-[#E8E7E8] outline-none md:w-[430px] h-[59px]"
               placeholder="Tu correo"
             />
             <button className="w-full text-lg md:w-[190px] h-[59px] shadow-md shadow-green-text-2 bg-green-text-2 rounded">
