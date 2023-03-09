@@ -1,8 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { useRouter } from "next/router"
-import styles from "./styles.module.css"
 
 const Navbar = () => {
   const logo = "/images/logo asoprocegua.jpg"
@@ -28,20 +27,25 @@ const Navbar = () => {
     },
   ]
 
+  const [isActive, setIsActive] = useState(false)
+
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.logo_container}>
+    <nav className="w-full flex justify-between items-center font-sans py-5 bg-white">
+      <div className="ml-5">
         <Link href={"/"}>
-          <Image alt="Asoprocegua" src={logo} width={200} height={46} />
+          <Image src={logo} width={204} height={46.59} alt="logo" />
         </Link>
       </div>
-      <div className={styles.menu_container}>
+      <div className="space-x-7 hidden lg:block">
         {menuItems.map((item) => {
           const isSelected = pathName === item.route
           return (
             <Link
               key={item.route}
-              className={`${styles.menu_item} ${isSelected && styles.selected}`}
+              className={`${"text-disabled-text font-medium"}${
+                isSelected &&
+                "relative text-green-text after:block after:w-3 after:h-3 after:content-[` `] after:rounded-3xl after:bg-green-text-2 after:absolute after:bottom-[-15px] after:left-[40%]"
+              }`}
               href={item.route}
             >
               {item.label}
@@ -49,13 +53,18 @@ const Navbar = () => {
           )
         })}
       </div>
-      <div className={styles.actions_container}>
-        <button className={styles.main_action}>Contáctanos</button>
+      <div className="mr-5 hidden lg:block">
+        <button className="bg-green-text-2 w-[190px] h-[59px] text-lg">
+          Contáctanos
+        </button>
       </div>
-      <div className={styles.mobile_container}>
-        <div className={styles.mobile_icon}></div>
-        <div className={styles.mobile_icon}></div>
-        <div className={styles.mobile_icon}></div>
+      <div
+        className="mr-5 space-y-1 lg:hidden cursor-pointer"
+        onClick={() => setIsActive(!isActive)}
+      >
+        <div className="w-[30px] h-[5px] bg-green-text rounded-sm"></div>
+        <div className="w-[30px] h-[5px] bg-green-text rounded-sm"></div>
+        <div className="w-[30px] h-[5px] bg-green-text rounded-sm"></div>
       </div>
     </nav>
   )
