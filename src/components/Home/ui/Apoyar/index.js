@@ -1,4 +1,9 @@
+import Modal from "@/components/Modal"
+import { useState } from "react"
+
 const Apoyar = () => {
+  const [modalState, setModalState] = useState(false)
+
   return (
     <section className="flex justify-center items-center py-14 font-sans bg-light-bg-2 bg-gradient-to-b from-[#3D7D40] to-[#fdfdfd]">
       <div className="flex justify-center items-center flex-col bg-[#F8F8F8] mx-5 rounded-lg px-5 py-16 md:py-56 md:px-8 md:max-w-6xl">
@@ -16,10 +21,14 @@ const Apoyar = () => {
           más productos Amazónicos. También buscamos donaciones y proyectos para
           consolidar nuestra asociación.
         </p>
-        <button className="w-full md:w-[258px] h-[59px] bg-green-text text-[18px] shadow-md shadow-green-text text-white">
+        <button
+          onClick={() => setModalState(!modalState)}
+          className="w-full md:w-[258px] h-[59px] bg-green-text text-[18px] shadow-md shadow-green-text text-white"
+        >
           Contáctanos
         </button>
       </div>
+      <Modal modalState={modalState} setModalState={setModalState} />
     </section>
   )
 }

@@ -1,6 +1,9 @@
+import Modal from "@/components/Modal"
 import Image from "next/image"
+import { useState } from "react"
 
 const Hero = () => {
+  const [modalState, setModalState] = useState(false)
   const arrow = "/images/arrow.svg"
   const right_plant = "/images/right plant.svg"
   const left_plant = "/images/left plant.svg"
@@ -19,11 +22,11 @@ const Hero = () => {
       <section className="md:h-[60vh] bg-[#F8F8F8] flex items-center justify-center font-sans relative">
         <div className="w-full max-w-2xl flex flex-col justify-center items-center gap-5 p-4 md:max-w-6xl">
           <div className="w-full flex justify-start md:justify-center">
-            <h2 className="text-left text-4xl leading-10 font-medium md:text-center md:text-6xl z-40">
+            <h2 className="text-left text-4xl leading-10 font-medium md:text-center md:text-6xl z-[33]">
               Acerca de Nosotros
             </h2>
           </div>
-          <div className="w-full flex justify-start md:justify-center z-40">
+          <div className="w-full flex justify-start md:justify-center z-[33]">
             <hr className="w-full max-w-[160px] border-t-4 border-[#9DCA55] border-l-0 border-r-0" />
           </div>
           <p className="text-left leading-8 text-disabled-text text-xl md:text-center z-30">
@@ -33,10 +36,13 @@ const Hero = () => {
             maderables del bosque y de liderazgo comunitario, turístico y
             ambiental.
           </p>
-          <button className="w-full h-[59px] mb-40 md:mb-0 bg-green-text-2 text-[18px] md:hidden z-40">
+          <button
+            onClick={() => setModalState(!modalState)}
+            className="w-full h-[59px] mb-40 md:mb-0 bg-green-text-2 text-[18px] md:hidden z-[33]"
+          >
             Contáctanos
           </button>
-          <div className="border border-gray-300 rounded-full p-6 cursor-pointer mt-10 hidden md:block z-40">
+          <div className="border border-gray-300 rounded-full p-6 cursor-pointer mt-10 hidden md:block z-[33]">
             <Image src={arrow} width={24.05} height={24.05} />
           </div>
           <img
@@ -120,6 +126,7 @@ const Hero = () => {
             className="absolute w-[129.08px] md:w-auto transition-all duration-75 ease-out scale-x-[-1] right-0 bottom-0"
           />
         </div>
+        <Modal modalState={modalState} setModalState={setModalState} />
       </section>
       <div className="w-full h-[131px] bg-[#3D7D40]"></div>
     </>

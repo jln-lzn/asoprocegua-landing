@@ -1,6 +1,9 @@
+import Modal from "@/components/Modal"
 import Image from "next/image"
+import { useState } from "react"
 
 const Hero = () => {
+  const [modalState, setModalState] = useState(false)
   const arrow = "/images/arrow.svg"
   const right_plant = "/images/right plant.svg"
   const left_plant = "/images/left plant.svg"
@@ -31,10 +34,13 @@ const Hero = () => {
             y no maderables del bosque y de liderazgo comunitario, social,
             turístico y ambiental.
           </p>
-          <button className="w-full z-10 mb-40 md:mb-0 h-[59px] bg-green-text-2 text-[18px] md:hidden">
+          <button
+            onClick={() => setModalState(!modalState)}
+            className="w-full z-10 mb-40 md:mb-0 h-[59px] bg-green-text-2 text-[18px] md:hidden"
+          >
             Contáctanos
           </button>
-          <div className="border border-gray-300 rounded-full p-6 cursor-pointer mt-10 hidden md:block z-50">
+          <div className="border border-gray-300 rounded-full p-6 cursor-pointer mt-10 hidden md:block z-[33]">
             <Image src={arrow} width={24.05} height={24.05} />
           </div>
           <img
@@ -119,6 +125,7 @@ const Hero = () => {
           />
         </div>
       </section>
+      <Modal modalState={modalState} setModalState={setModalState} />
       <div className="w-full h-[131px] bg-[#3D7D40]"></div>
     </>
   )
