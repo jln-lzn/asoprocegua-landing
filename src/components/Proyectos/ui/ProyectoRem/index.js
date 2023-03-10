@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const ProyectoRem = () => {
   const img2 = "/images/img2.png"
   const img3 = "/images/img3.png"
@@ -29,35 +31,35 @@ const ProyectoRem = () => {
           </p>
         </div>
         <div className="w-full flex flex-wrap justify-center items-center gap-3">
-          <img
+          <Image
             className="w-full md:w-[353px] object-contain"
             src={img2}
             width={353}
             height={413}
             alt="img1"
           />
-          <img
+          <Image
             className="w-full md:w-[560px] object-contain"
             src={img4}
             width={353}
             height={413}
             alt="img2"
           />
-          <img
+          <Image
             className="w-full md:w-[340px] object-contain"
             src={img3}
             width={353}
             height={413}
             alt="img3"
           />
-          <img
+          <Image
             className="w-full md:w-[340px] object-contain"
             src={img5}
             width={353}
             height={413}
             alt="img4"
           />
-          <img
+          <Image
             className="w-full md:w-[340px] object-contain"
             src={img6}
             width={353}

@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const Footer = () => {
   const grass_footer = "/images/grass footer.svg"
   const rock_footer = "/images/rock footer.svg"
@@ -34,23 +36,24 @@ const Footer = () => {
         <img
           src={rock_footer}
           className="absolute top-[-60px] sm:top-auto w-full sm:left-auto sm:right-[40px] md:right-0 sm:w-[440px] lg:w-[836px] lg:h-[255px]"
+          alt="rock"
         />
-        <img className="w-full" src={grass_footer} />
+        <img className="w-full" src={grass_footer} alt="grass" />
         <div className="flex justify-start lg:justify-around flex-col lg:flex-row items-start lg:items-center gap-5 px-5 py-16 bg-green-text text-white">
           <div className="flex gap-2 z-50">
-            <img src={phone} />
+            <Image src={phone} width={24} height={24} alt="phone" />
             <span>+57 318 7692579</span>
           </div>
           <div className="flex gap-2 z-50">
-            <img src={mail} />
+            <Image src={mail} width={24} height={24} alt="mail" />
             <p>asociacionasoprocegua@gmail.com</p>
           </div>
           <div className="flex gap-2 z-50">
-            <img src={fb} />
+            <Image src={fb} width={24} height={24} alt="fb" />
             <p>asoproceguaguaviare</p>
           </div>
           <div className="flex gap-2 z-50">
-            <img src={ig} />
+            <Image src={ig} width={24} height={24} alt="ig" />
             <p>asoproceguaguaviare</p>
           </div>
         </div>

@@ -8,9 +8,12 @@ const Hero = () => {
   return (
     <section className="bg-[#fdfdfd]">
       <div className="flex items-center justify-center font-sans md:py-36 relative">
-        <img
+        <Image
           src={left_plant}
           className="absolute top-50 left-0 z-0 opacity-30 2xl:opacity-100"
+          width={182}
+          height={396}
+          alt="plant"
         />
         <div className="w-full max-w-2xl flex flex-col justify-center items-center gap-5 p-4 md:max-w-6xl z-10">
           <div className="w-full flex justify-start md:justify-center">
@@ -32,15 +35,18 @@ const Hero = () => {
             Contáctanos
           </button>
           <div className="border border-gray-300 rounded-full p-6 cursor-pointer mt-10 hidden md:block">
-            <Image src={arrow} width={24.05} height={24.05} />
+            <Image src={arrow} width={24.05} height={24.05} alt="arrow" />
           </div>
           <div className="w-full flex justify-start md:justify-center mt-20">
             <hr className="w-full border-t-2 border-[#E8E7E8] border-l-0 border-r-0" />
           </div>
         </div>
-        <img
+        <Image
           src={right_plant}
           className="absolute top-50 right-0 z-0 opacity-30 2xl:opacity-100"
+          width={182}
+          height={396}
+          alt="plant"
         />
       </div>
     </section>
