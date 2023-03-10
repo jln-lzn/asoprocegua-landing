@@ -30,7 +30,7 @@ const Navbar = () => {
   const [isActive, setIsActive] = useState(false)
 
   return (
-    <nav className="w-full flex justify-between items-center font-sans py-5 bg-white">
+    <nav className="w-full flex justify-between items-center font-sans py-5 bg-white relative z-50">
       <div className="ml-5">
         <Link href={"/"}>
           <Image src={logo} width={204} height={46.59} alt="logo" />
@@ -42,7 +42,7 @@ const Navbar = () => {
           return (
             <Link
               key={item.route}
-              className={`${"text-disabled-text font-medium"}${
+              className={`${"text-disabled-text font-medium"} ${
                 isSelected &&
                 "relative text-green-text after:block after:w-3 after:h-3 after:content-[` `] after:rounded-3xl after:bg-green-text-2 after:absolute after:bottom-[-15px] after:left-[40%]"
               }`}
