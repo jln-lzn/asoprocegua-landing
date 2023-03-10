@@ -28,6 +28,7 @@ export default function Example() {
   const router = useRouter()
   const pathName = router.pathname
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  console.log(mobileMenuOpen)
 
   return (
     <header className="bg-white relative z-50 font-sans">
@@ -87,7 +88,7 @@ export default function Example() {
               <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
+                alt="logo"
               />
             </Link>
             <button
@@ -101,7 +102,7 @@ export default function Example() {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-8">
+              <div className="space-y-2 py-8 font-sans">
                 {menuItems.map((item) => {
                   return (
                     <Link
@@ -110,6 +111,7 @@ export default function Example() {
                         "text-disabled-text font-medium -mx-3 block rounded-lg py-2 px-3 text-base leading-7"
                       }
                       href={item.route}
+                      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     >
                       {item.label}
                     </Link>
