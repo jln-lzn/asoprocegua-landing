@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="flex items-center justify-center font-sans md:py-36 relative">
         <Image
           src={left_plant}
-          className="absolute top-50 left-0 z-0 opacity-30 2xl:opacity-100"
+          className="absolute top-50 left-0 z-0 opacity-70 2xl:opacity-100"
           width={182}
           height={396}
           alt="plant"
@@ -40,7 +40,7 @@ const Hero = () => {
         </div>
         <Image
           src={right_plant}
-          className="absolute top-50 right-0 z-0 opacity-30 2xl:opacity-100"
+          className="absolute top-50 right-0 z-0 opacity-70 2xl:opacity-100"
           width={182}
           height={396}
           alt="plant"

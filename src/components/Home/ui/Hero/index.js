@@ -70,7 +70,7 @@ const Hero = () => {
           <img
             src={big_bush}
             alt="big_bush"
-            className="absolute w-[169.58px] transition-all duration-75 ease-out md:w-auto right-[-30px] lg:right-0 bottom-[-30px] z-10"
+            className="absolute w-[169.58px] transition-all duration-75 ease-out md:w-auto right-0 bottom-[-30px] z-10"
           />
           <img
             src={small_bush}

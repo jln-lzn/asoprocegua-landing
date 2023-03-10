@@ -45,14 +45,17 @@ const Proyectos = () => {
         <img
           className="absolute bottom-[-170px] left-8 lg:w-[128px] lg:left-auto lg:right-[200px] lg:top-5"
           src={img1}
+          alt="img1"
         />
         <img
           className="absolute bottom-[-170px] left-36 lg:w-[235px] lg:left-auto lg:right-[-45px] lg:top-[-40px]"
           src={img2}
+          alt="img2"
         />
         <img
           className="absolute bottom-[-335px] left-24 lg:w-[380px] lg:left-auto lg:right-[-45px] lg:top-[250px]"
           src={img3}
+          alt="img3"
         />
       </div>
     </section>
