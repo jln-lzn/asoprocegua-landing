@@ -2,7 +2,7 @@ const Vision = () => {
   return (
     <div className="bg-light-bg-2 bg-gradient-to-b from-[#3D7D40] to-[#fdfdfd]">
       <section className="max-w-7xl my-0 mx-auto ">
-        <div className="grid grid-cols-fluid md:grid-cols-card items-center justify-center gap-8 px-5 font-sans md:py-36">
+        <div className="grid grid-cols-fluid md:grid-cols-card items-center justify-center gap-5 px-5 font-sans md:py-36">
           <div className="flex justify-center items-center flex-col">
             <div className="flex justify-start text-lg py-12 flex-col bg-[#F8F8F8] px-8 rounded-lg h-[580px] border border-[#f8f8f8]">
               <h3 className="mb-4 text-4xl">Visión</h3>

@@ -81,7 +81,7 @@ export default function Example() {
       </nav>
       <Dialog
         as="div"
-        className="lg:hidden z-40 relative"
+        className="lg:hidden z-40 relative font-sans"
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
@@ -98,7 +98,7 @@ export default function Example() {
             </button>
           </div>
           <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
+            <div className="-my-6">
               <div className="space-y-2 py-8">
                 {menuItems.map((item) => {
                   return (

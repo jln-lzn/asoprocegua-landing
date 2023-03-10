@@ -14,6 +14,13 @@ export default function App({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      <style js global>
+        {`
+          :root {
+            --font-archivo: ${archivo.style.fontFamily};
+          }
+        `}
+      </style>
     </main>
   )
 }

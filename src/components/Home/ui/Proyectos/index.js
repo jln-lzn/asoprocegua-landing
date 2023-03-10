@@ -7,7 +7,7 @@ const Proyectos = () => {
   const img3 = "/images/img3.png"
 
   return (
-    <section className="md:h-screen bg-[#fdfdfd] flex items-center flex-col justify-center font-sans mt-6 px-5">
+    <section className="md:h-screen bg-[#fdfdfd] overflow-hidden flex items-center flex-col justify-center font-sans mt-6 px-5">
       <div className="w-full">
         <h2 className="text-left mx-1 text-4xl leading-10 font-medium md:text-center md:text-6xl mb-4">
           Nuestros proyectos
@@ -16,7 +16,7 @@ const Proyectos = () => {
           <hr className="w-full max-w-[160px] border-t-4 border-[#9DCA55] border-l-0 border-r-0" />
         </div>
       </div>
-      <div className="w-full flex flex-col mt-4 justify-center mb-96 md:mb-0 relative items-center rounded-lg gap-5 py-8 lg:py-16 px-4 md:px-8 md:max-w-6xl bg-[#F8F8F8] border border-[#E8E7E8]">
+      <div className="w-full flex flex-col mt-4 justify-center mb-96 md:mb-0 relative items-center rounded-lg gap-5 py-8 lg:py-16 px-4 md:px-8 md:max-w-6xl border border-[#E8E7E8]">
         <div className="w-full flex items-center mt-8">
           <h3 className="font-bold text-3xl uppercase md:text-4xl mr-12">
             Proyecto REM+ VA
@@ -30,7 +30,7 @@ const Proyectos = () => {
             />
           </div>
         </div>
-        <p className="text-left leading-8 text-disabled-text text-xl mb-5 lg:mr-80">
+        <p className="text-left leading-8 text-disabled-text text-xl mb-5 lg:mr-[500px]">
           Por medio de este proyecto hemos beneficiado a más de 170 familias
           campesinas con un servicio de extensión agropecuaria y apoyándolos en
           sus proyectos productivos. Además obtuvimos financiación para la

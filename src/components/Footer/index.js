@@ -33,10 +33,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="relative">
-        <img
+        <Image
           src={rock_footer}
-          className="absolute top-[-60px] sm:top-auto w-full sm:left-auto sm:right-[40px] md:right-0 sm:w-[440px] lg:w-[836px] lg:h-[255px]"
+          className="absolute transition-all duration-75 ease-out w-[240px] md:w-[285px] lg:w-[400px] 2xl:w-[600px] right-0 top-1"
           alt="rock"
+          width={418.17}
+          height={127.55}
         />
         <img className="w-full" src={grass_footer} alt="grass" />
         <div className="flex justify-start lg:justify-around flex-col lg:flex-row items-start lg:items-center gap-5 px-5 py-16 bg-green-text text-white">
