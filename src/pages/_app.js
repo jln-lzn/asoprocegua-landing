@@ -1,6 +1,7 @@
 import "@/styles/globals.css"
 import Layout from "@/components/layout"
 import { Archivo } from "@next/font/google"
+import { useEffect, useState } from "react"
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -9,18 +10,27 @@ const archivo = Archivo({
 })
 
 export default function App({ Component, pageProps }) {
+  const [font, setFont] = useState(false)
+  useEffect(() => {
+    setFont(true)
+  }, [])
+
   return (
     <main className={`${archivo.variable}`}>
       <Layout>
         <Component {...pageProps} />
       </Layout>
-      <style js global>
-        {`
-          :root {
-            --font-archivo: ${archivo.style.fontFamily};
-          }
-        `}
-      </style>
+      {font ? (
+        <style js="true" global="true">
+          {`
+            :root {
+              --font-archivo: ${archivo.style.fontFamily};
+            }
+          `}
+        </style>
+      ) : (
+        ""
+      )}
     </main>
   )
 }
