@@ -53,7 +53,7 @@ const Proyectos = () => {
           alt="img2"
         />
         <img
-          className="absolute bottom-[-335px] left-24 lg:w-[380px] lg:left-auto lg:right-[-45px] lg:top-[250px]"
+          className="absolute bottom-[-335px] md:bottom-[-200px] md:left-[300px] left-24 lg:w-[380px] lg:left-auto lg:right-[-45px] lg:top-[250px]"
           src={img3}
           alt="img3"
         />

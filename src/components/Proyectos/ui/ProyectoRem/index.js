@@ -8,7 +8,7 @@ const ProyectoRem = () => {
   const img6 = "/images/img6.png"
 
   return (
-    <section className="bg-[#fdfdfd] flex items-center flex-col justify-center font-sans md:mb-48 px-5">
+    <section className="bg-[#fdfdfd] flex items-center flex-col justify-center font-sans md:mb-24 lg:mb-48 px-5">
       <div className="w-full flex flex-col mt-4 justify-center relative items-center rounded-lg gap-5 py-8 lg:py-16 px-4 md:px-8 md:max-w-6xl">
         <div className="flex flex-col md:flex-row">
           <div className="">
@@ -32,35 +32,35 @@ const ProyectoRem = () => {
         </div>
         <div className="w-full flex flex-wrap justify-center items-center gap-3">
           <Image
-            className="w-full md:w-[353px] object-contain"
+            className="w-[230px] md:w-[240px] h-[170px] md:h-[213px] lg:h-[413px] lg:w-[353px] object-contain"
             src={img2}
             width={353}
             height={413}
             alt="img1"
           />
           <Image
-            className="w-full md:w-[560px] object-contain"
+            className="w-[230px] md:w-[260px] md:h-[200px] lg:h-[413px] lg:w-[560px] object-contain"
             src={img4}
             width={560}
             height={413}
             alt="img2"
           />
           <Image
-            className="w-full md:w-[363px] object-contain"
+            className="w-[150px] md:w-[240px] lg:w-[363px] object-contain"
             src={img3}
             width={363}
             height={413}
             alt="img3"
           />
           <Image
-            className="w-full md:w-[340px] object-contain"
+            className="w-[150px] md:w-[240px] lg:w-[340px] object-contain"
             src={img5}
             width={353}
             height={413}
             alt="img4"
           />
           <Image
-            className="w-full md:w-[340px] object-contain"
+            className="w-[150px] md:w-[240px] lg:w-[340px] object-contain"
             src={img6}
             width={340}
             height={413}
