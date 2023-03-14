@@ -19,17 +19,17 @@ const Hero = () => {
 
   return (
     <>
-      <section className="md:h-[60vh] bg-[#F8F8F8] flex items-center justify-center font-sans relative">
-        <div className="w-full max-w-2xl flex flex-col justify-center items-center gap-5 p-4 md:max-w-6xl">
+      <section className="md:h-[80vh] bg-[#F8F8F8] flex items-center justify-center font-sans relative">
+        <div className="w-full max-w-2xl flex flex-col justify-center items-center gap-5 p-4 md:max-w-3xl lg:max-w-4xl">
           <div className="w-full flex justify-start md:justify-center">
-            <h2 className="text-left text-4xl leading-10 font-medium md:text-center md:text-6xl z-[33]">
+            <h2 className="text-left text-4xl leading-[38.73px] md:leading-[62.93px] font-medium md:text-center md:text-6xl z-[33]">
               Acerca de Nosotros
             </h2>
           </div>
           <div className="w-full flex justify-start md:justify-center z-[33]">
             <hr className="w-full max-w-[160px] border-t-4 border-[#9DCA55] border-l-0 border-r-0" />
           </div>
-          <p className="text-left leading-8 text-disabled-text text-xl md:text-center z-30">
+          <p className="text-left leading-[21.84px] md:leading-[34.1px] text-disabled-text text-xl md:text-center z-30">
             Nuestra misión es representar a los campesinos del Guaviare,
             consolidar cadenas productivas con valor agregado. Desarrollar
             proyectos agropecuarios, frutales amazónicos, maderables y no
@@ -88,7 +88,7 @@ const Hero = () => {
           <img
             src={animal}
             alt="animal"
-            className="absolute w-[119.68px] transition-all duration-75 ease-out md:w-auto right-24 lg:right-[310px] bottom-0 z-10"
+            className="absolute w-[160px] -bottom-5 transition-all duration-75 ease-out md:w-auto right-24 lg:right-[390px] z-10"
           />
           <img
             src={bg_tree1}

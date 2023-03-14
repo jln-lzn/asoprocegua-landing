@@ -19,16 +19,16 @@ const Hero = () => {
 
   return (
     <>
-      <section className="md:h-[60vh] bg-[#F8F8F8] flex items-center justify-center font-sans relative">
-        <div className="w-full max-w-2xl flex flex-col justify-center items-center gap-5 p-4 md:max-w-6xl">
-          <h2 className="text-left text-4xl leading-10 font-medium md:text-center md:text-6xl z-30">
+      <section className="md:h-[80vh] bg-[#F8F8F8] flex items-center justify-center font-sans relative">
+        <div className="w-full max-w-2xl flex flex-col justify-center items-center gap-5 p-4 md:max-w-3xl lg:max-w-4xl 2xl:max-w-6xl">
+          <h2 className="text-left text-4xl leading-[38.73px] md:leading-[62.93px] font-medium md:text-center md:text-6xl z-30">
             Nuestra misión es representar a los campesinos del Guaviare,
             consolidar cadenas productivas con valor agregado.
           </h2>
           <div className="w-full flex justify-left md:justify-center z-10">
             <hr className="w-full max-w-[160px] border-t-4 border-[#9DCA55] border-l-0 border-r-0" />
           </div>
-          <p className="text-left text-lg leading-8 text-disabled-text md:text-xl md:text-center z-30">
+          <p className="text-left text-lg leading-[21.84px] md:leading-[34.1px] md:mx-16 lg:mx-0 text-disabled-text md:text-xl md:text-center z-30">
             Desarrollar proyectos sostenibles con la conservación de los bosques
             y el medio ambiente, agropecuarios, frutales amazónicos, maderables
             y no maderables del bosque y de liderazgo comunitario, social,
@@ -86,7 +86,7 @@ const Hero = () => {
           <img
             src={animal}
             alt="animal"
-            className="absolute w-[119.68px] transition-all duration-75 ease-out md:w-auto left-24 lg:left-[310px] bottom-0 z-10"
+            className="absolute w-[119.68px] transition-all duration-75 ease-out md:w-auto left-24 lg:left-[280px] bottom-0 z-10"
           />
           <img
             src={bg_tree1}

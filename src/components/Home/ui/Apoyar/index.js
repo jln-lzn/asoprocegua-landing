@@ -14,7 +14,7 @@ const Apoyar = () => {
         <div className="w-full flex justify-left md:justify-center mb-4">
           <hr className="w-full max-w-[160px] border-t-4 border-[#9DCA55] border-l-0 border-r-0" />
         </div>
-        <p className="mb-8 text-disabled-text leading-10 text-xl text-left md:text-center mt-4">
+        <p className="mb-8 text-disabled-text leading-[34.1px] text-xl text-left md:text-center mt-4">
           Estamos activamente buscando mercados para vender nuestros productos,
           en los que se encuentran pulpa congelada de PNMB, como es Asaí
           (Euterpe Precatoria) Moriche (Maurutia Fleuxosa) y Seje (Oenocarpus
