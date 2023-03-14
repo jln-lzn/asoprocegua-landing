@@ -22,13 +22,21 @@ const Footer = () => {
             defender nuestra Amazonía si nos apoyas en este camino. Contáctanos
             para conocer más
           </p>
-          <form className="flex flex-col md:flex-row items-center w-full md:justify-center">
+          <form
+            action="mailto:asociacionasoprocegua@gmail.com"
+            className="flex flex-col md:flex-row items-center w-full md:justify-center"
+          >
             <input
               type="text"
+              name="mail"
+              required
               className="text-lg w-full focus:border-[#9DCA55] shadow-sm focus:shadow-[#9DCA55] mr-0 md:mr-4 mb-4 md:mb-0 rounded bg-[#fdfdfd] pl-5 border border-[#E8E7E8] outline-none md:w-[430px] h-[59px]"
               placeholder="Tu correo"
             />
-            <button className="w-full text-lg md:w-[190px] h-[59px] shadow-md shadow-green-text-2 bg-green-text-2 rounded">
+            <button
+              type="submit"
+              className="w-full text-lg md:w-[190px] h-[59px] shadow-md shadow-green-text-2 bg-green-text-2 rounded"
+            >
               Enviar
             </button>
           </form>

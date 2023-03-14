@@ -11,7 +11,7 @@ const Modal = ({ modalState, setModalState }) => {
           modalState ? "flex" : "hidden"
         } h-full md:h-screen fixed top-0 left-0 bg-[rgba(0,0,0,0.5)] font-sans z-[99]`}
       >
-        <div className="w-full md:h-[80vh] md:h-auto md:w-[700px] bg-white relative pt-4 rounded-lg md:pb-36 md:pt-24 overflow-hidden">
+        <div className="w-full md:h-[70vh] h-auto md:w-[700px] bg-white relative pt-4 rounded-lg md:pb-36 md:pt-24 overflow-hidden">
           <div className="px-10 py-8 md:py-0 md:px-16">
             <p className="mb-5 leading-6 text-lg">
               Te invitamos a que contribuyas con el desarrollo sostenible del
@@ -26,7 +26,11 @@ const Modal = ({ modalState, setModalState }) => {
             >
               X
             </button>
-            <form>
+            <form
+              action="mailto:asociacionasoprocegua@gmail.com"
+              method="post"
+              encType="text/plain"
+            >
               <div className="flex flex-col mb-4">
                 <label htmlFor="nombre" className="text-[#9DCA55]">
                   Nombre
@@ -34,7 +38,7 @@ const Modal = ({ modalState, setModalState }) => {
                 <input
                   className="focus:border-[#9DCA55] shadow-sm focus:shadow-[#9DCA55] border-gray-300 border rounded mt-2 h-[59px] pl-5 outline-none"
                   type="text"
-                  name="nombre"
+                  name="name"
                   id="nombre"
                   required
                   placeholder="Nombre Completo"
@@ -47,7 +51,7 @@ const Modal = ({ modalState, setModalState }) => {
                 <input
                   className="focus:border-[#9DCA55] shadow-sm focus:shadow-[#9DCA55] border-gray-300 border rounded mt-2 h-[59px] pl-5 outline-none"
                   type="text"
-                  name="correo"
+                  name="mail"
                   id="correo"
                   required
                   placeholder="Tu Email"
@@ -59,13 +63,16 @@ const Modal = ({ modalState, setModalState }) => {
                 </label>
                 <textarea
                   className="focus:border-[#9DCA55] shadow-sm focus:shadow-[#9DCA55] h-[59px] md:h-[140px] border-gray-300 border rounded mt-2 pl-5 pt-5 outline-none"
-                  name="asunto"
+                  name="comment"
                   id="asunto"
                   required
                   placeholder="Escribe aquí"
                 />
               </div>
-              <button className="w-full text-lg md:w-[190px] h-[59px] bg-green-text-2 rounded">
+              <button
+                type="submit"
+                className="w-full text-lg md:w-[190px] h-[59px] bg-green-text-2 rounded"
+              >
                 Enviar
               </button>
             </form>
