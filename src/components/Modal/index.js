@@ -1,8 +1,33 @@
+import { useState } from 'react'
 import Image from 'next/image'
+import sendEmailSB from '@/pages/api/sendingBlue'
+import { toast } from 'sonner'
 
 const Modal = ({ modalState, setModalState }) => {
   const grass = '/images/grass footer.svg'
   const rock = '/images/rock footer.svg'
+
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault()
+    try {
+      const res = await sendEmailSB(1, ['julian.lozano.fr@gmail.com'], {
+        name,
+        email,
+        message
+      })
+
+      setName('')
+      setEmail('')
+      setMessage('')
+      toast('Mensaje enviado')
+    } catch (error) {
+      console.log(error)   
+    }
+  }
 
   return (
     <>
@@ -27,9 +52,7 @@ const Modal = ({ modalState, setModalState }) => {
               X
             </button>
             <form
-              action="mailto:asociacionasoprocegua@gmail.com"
-              method="post"
-              encType="text/plain"
+              onSubmit={handleFormSubmit}
             >
               <div className="flex flex-col mb-4">
                 <label htmlFor="nombre" className="text-[#9DCA55]">
@@ -42,6 +65,8 @@ const Modal = ({ modalState, setModalState }) => {
                   id="nombre"
                   required
                   placeholder="Nombre Completo"
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
                 />
               </div>
               <div className="flex flex-col mb-4">
@@ -55,6 +80,8 @@ const Modal = ({ modalState, setModalState }) => {
                   id="correo"
                   required
                   placeholder="Tu Email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
                 />
               </div>
               <div className="flex flex-col mb-4">
@@ -67,6 +94,8 @@ const Modal = ({ modalState, setModalState }) => {
                   id="asunto"
                   required
                   placeholder="Escribe aquí"
+                  onChange={(e) => setMessage(e.target.value)}
+                  value={message}
                 />
               </div>
               <button
