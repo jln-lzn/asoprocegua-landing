@@ -1,16 +1,16 @@
-import Image from "next/image"
+import Image from 'next/image'
 
 const QuienesSomos = () => {
-  const circles = "/images/circles.svg"
-  const img7 = "/images/img7.png"
-  const img8 = "/images/img8.png"
-  const img9 = "/images/img9.png"
+  const circles = '/images/circles.svg'
+  const img7 = '/images/img7.png'
+  const img8 = '/images/img8.png'
+  const img9 = '/images/img9.png'
 
   return (
     <>
-      <div className="font-sans text-2xl flex justify-center mb-48 mt-32 px-5">
+      <div className="font-sans text-2xl flex justify-center mb-28 md:mb-48 mt-36 md:mt-20 px-5">
         <div className="w-full flex justify-center items-center max-w-2xl 2xl:max-w-6xl relative mx-8">
-          <p className="leading-[47.75px] font-bold mt-4 md:mt-0">
+          <p className="leading-8 md:leading-[47.75px] font-bold mt-4 md:mt-0">
             <span className="relative">
               <span className="text-[#CEDE86] absolute text-[70px] -left-10 lg:-left-14 bottom-0 leading-0 lg:text-[120px]">
                 “
@@ -19,7 +19,7 @@ const QuienesSomos = () => {
             Una visión de sostenibilidad favorable a la preservación de los
             bosques, con el incentivo a productos maderables y no maderables con
             un manejo ambiental sostenible para una mejor calidad de vida de los
-            asociados.{" "}
+            asociados.{' '}
             <span className="relative">
               <span className="text-[#CEDE86] rotate-[180deg] text-[70px] absolute left-4 bottom-0 lg:bottom-4 leading-0 lg:text-[120px]">
                 “

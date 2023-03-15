@@ -1,12 +1,12 @@
-import Modal from "@/components/Modal"
-import Image from "next/image"
-import { useState } from "react"
+import Modal from '@/components/Modal'
+import Image from 'next/image'
+import { useState } from 'react'
 
 const Hero = () => {
   const [modalState, setModalState] = useState(false)
-  const left_plant = "/images/left plant.svg"
-  const right_plant = "/images/right plant.svg"
-  const arrow = "/images/arrow.svg"
+  const left_plant = '/images/left plant.svg'
+  const right_plant = '/images/right plant.svg'
+  const arrow = '/images/arrow.svg'
 
   return (
     <section className="bg-[#fdfdfd]">
@@ -27,7 +27,7 @@ const Hero = () => {
           <div className="w-full flex justify-start md:justify-center">
             <hr className="w-full max-w-[160px] border-t-4 border-[#9DCA55] border-l-0 border-r-0" />
           </div>
-          <p className="text-left text-lg leading-[21.84px] md:leading-[34.1px] md:mx-16 lg:mx-0 text-disabled-text md:text-xl md:text-center z-30">
+          <p className="text-left text-lg leading-[34.1px] md:mx-16 lg:mx-0 text-disabled-text md:text-xl md:text-center z-30">
             Nuestra misión es representar a los campesinos del Guaviare,
             consolidar cadenas productivas con valor agregado. Desarrollar
             proyectos agropecuarios, frutales amazónicos, maderables y no

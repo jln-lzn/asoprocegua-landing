@@ -1,15 +1,15 @@
-import Image from "next/image"
+import Image from 'next/image'
 
 const ProyectoRem = () => {
-  const img2 = "/images/img2.png"
-  const img3 = "/images/img3.png"
-  const img4 = "/images/img4.png"
-  const img5 = "/images/img5.png"
-  const img6 = "/images/img6.png"
+  const img2 = '/images/img2.png'
+  const img3 = '/images/img3.png'
+  const img4 = '/images/img4.png'
+  const img5 = '/images/img5.png'
+  const img6 = '/images/img6.png'
 
   return (
     <section className="bg-[#fdfdfd] flex items-center flex-col justify-center font-sans md:mb-24 lg:mb-48 px-5">
-      <div className="w-full flex flex-col mt-4 justify-center relative items-center rounded-lg gap-5 py-8 lg:py-16 px-4 md:px-8 md:max-w-6xl">
+      <div className="w-full flex flex-col mt-4 md:mt-16 lg:mt-4 justify-center relative items-center rounded-lg gap-5 py-8 lg:py-16 px-4 md:px-8 md:max-w-6xl">
         <div className="flex flex-col md:flex-row">
           <div className="">
             <h3 className="font-bold text-4xl uppercase md:mr-12 mb-4">
@@ -32,7 +32,7 @@ const ProyectoRem = () => {
         </div>
         <div className="w-full flex flex-wrap justify-center items-center gap-3">
           <Image
-            className="w-[230px] md:w-[240px] h-[170px] md:h-[213px] lg:h-[413px] lg:w-[353px] object-contain"
+            className="w-[145px] md:w-[190px] h-[170px] md:h-[213px] lg:h-[413px] lg:w-[353px] object-contain"
             src={img2}
             width={353}
             height={413}

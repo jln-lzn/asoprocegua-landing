@@ -1,25 +1,25 @@
-import Modal from "@/components/Modal"
-import Image from "next/image"
-import { useState } from "react"
+import Modal from '@/components/Modal'
+import Image from 'next/image'
+import { useState } from 'react'
 
 const Hero = () => {
   const [modalState, setModalState] = useState(false)
-  const arrow = "/images/arrow.svg"
-  const right_plant = "/images/right plant.svg"
-  const left_plant = "/images/left plant.svg"
-  const lianas = "/images/lianas.svg"
-  const bird = "/images/bird2.svg"
-  const big_bush = "/images/big bush.svg"
-  const small_bush = "/images/small bush.svg"
-  const animal = "/images/animal2.svg"
-  const bg_tree1 = "/images/bg tree1.svg"
-  const bg_tree2 = "/images/bg tree2.svg"
-  const bg_tree3 = "/images/bg tree3.svg"
-  const bg_plant = "/images/bg plant.svg"
+  const arrow = '/images/arrow.svg'
+  const right_plant = '/images/right plant.svg'
+  const left_plant = '/images/left plant.svg'
+  const lianas = '/images/lianas.svg'
+  const bird = '/images/bird2.svg'
+  const big_bush = '/images/big bush.svg'
+  const small_bush = '/images/small bush.svg'
+  const animal = '/images/animal2.svg'
+  const bg_tree1 = '/images/bg tree1.svg'
+  const bg_tree2 = '/images/bg tree2.svg'
+  const bg_tree3 = '/images/bg tree3.svg'
+  const bg_plant = '/images/bg plant.svg'
 
   return (
     <>
-      <section className="md:h-[80vh] bg-[#F8F8F8] flex items-center justify-center font-sans relative">
+      <section className="md:h-screen bg-[#F8F8F8] flex items-center justify-center font-sans relative">
         <div className="w-full max-w-2xl flex flex-col justify-center items-center gap-5 p-4 md:max-w-3xl lg:max-w-4xl">
           <div className="w-full flex justify-start md:justify-center">
             <h2 className="text-left text-4xl leading-[38.73px] md:leading-[62.93px] font-medium md:text-center md:text-6xl z-[33]">
@@ -29,7 +29,7 @@ const Hero = () => {
           <div className="w-full flex justify-start md:justify-center z-[33]">
             <hr className="w-full max-w-[160px] border-t-4 border-[#9DCA55] border-l-0 border-r-0" />
           </div>
-          <p className="text-left leading-[21.84px] md:leading-[34.1px] text-disabled-text text-xl md:text-center z-30">
+          <p className="text-left leading-[34.1px] md:leading-[34.1px] text-disabled-text text-xl md:text-center z-30">
             Nuestra misión es representar a los campesinos del Guaviare,
             consolidar cadenas productivas con valor agregado. Desarrollar
             proyectos agropecuarios, frutales amazónicos, maderables y no
@@ -88,7 +88,7 @@ const Hero = () => {
           <img
             src={animal}
             alt="animal"
-            className="absolute w-[160px] -bottom-5 transition-all duration-75 ease-out md:w-auto right-24 lg:right-[390px] z-10"
+            className="absolute w-[160px] -bottom-5 z-40 transition-all duration-75 ease-out md:w-auto right-24 lg:right-[390px]"
           />
           <img
             src={bg_tree1}

@@ -1,25 +1,25 @@
-import Modal from "@/components/Modal"
-import Image from "next/image"
-import { useState } from "react"
+import Modal from '@/components/Modal'
+import Image from 'next/image'
+import { useState } from 'react'
 
 const Hero = () => {
   const [modalState, setModalState] = useState(false)
-  const arrow = "/images/arrow.svg"
-  const right_plant = "/images/right plant.svg"
-  const left_plant = "/images/left plant.svg"
-  const lianas = "/images/lianas.svg"
-  const bird = "/images/bird1.svg"
-  const big_bush = "/images/big bush.svg"
-  const small_bush = "/images/small bush.svg"
-  const animal = "/images/animal.svg"
-  const bg_tree1 = "/images/bg tree1.svg"
-  const bg_tree2 = "/images/bg tree2.svg"
-  const bg_tree3 = "/images/bg tree3.svg"
-  const bg_plant = "/images/bg plant.svg"
+  const arrow = '/images/arrow.svg'
+  const right_plant = '/images/right plant.svg'
+  const left_plant = '/images/left plant.svg'
+  const lianas = '/images/lianas.svg'
+  const bird = '/images/bird1.svg'
+  const big_bush = '/images/big bush.svg'
+  const small_bush = '/images/small bush.svg'
+  const animal = '/images/animal.svg'
+  const bg_tree1 = '/images/bg tree1.svg'
+  const bg_tree2 = '/images/bg tree2.svg'
+  const bg_tree3 = '/images/bg tree3.svg'
+  const bg_plant = '/images/bg plant.svg'
 
   return (
     <>
-      <section className="md:h-[80vh] bg-[#F8F8F8] flex items-center justify-center font-sans relative">
+      <section className="md:h-screen bg-[#F8F8F8] flex items-center justify-center font-sans relative">
         <div className="w-full max-w-2xl flex flex-col justify-center items-center gap-5 p-4 md:max-w-3xl lg:max-w-4xl 2xl:max-w-6xl">
           <h2 className="text-left text-4xl leading-[38.73px] md:leading-[62.93px] font-medium md:text-center md:text-6xl z-30">
             Nuestra misión es representar a los campesinos del Guaviare,

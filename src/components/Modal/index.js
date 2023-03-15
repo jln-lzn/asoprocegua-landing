@@ -1,23 +1,23 @@
-import Image from "next/image"
+import Image from 'next/image'
 
 const Modal = ({ modalState, setModalState }) => {
-  const grass = "/images/grass footer.svg"
-  const rock = "/images/rock footer.svg"
+  const grass = '/images/grass footer.svg'
+  const rock = '/images/rock footer.svg'
 
   return (
     <>
       <div
         className={`w-screen justify-center items-center ${
-          modalState ? "flex" : "hidden"
+          modalState ? 'flex' : 'hidden'
         } h-full md:h-screen fixed top-0 left-0 bg-[rgba(0,0,0,0.5)] font-sans z-[99]`}
       >
-        <div className="w-full md:h-[70vh] h-auto md:w-[700px] bg-white relative pt-4 rounded-lg md:pb-36 md:pt-24 overflow-hidden">
-          <div className="px-10 py-8 md:py-0 md:px-16">
-            <p className="mb-5 leading-6 text-lg">
+        <div className="w-full md:h-[80vh] h-auto md:w-[700px] bg-white relative pt-4 rounded-lg md:pb-36 md:pt-[80px] overflow-hidden">
+          <div className="px-10 py-8 md:py-0 md:px-14">
+            <p className="mb-5 leading-6 text-base md:text-lg">
               Te invitamos a que contribuyas con el desarrollo sostenible del
               Guaviare, uno de los departamentos con mayor riesgo de
               deforestación. Las comunidades campesinas estamos listas para
-              defender nuestra Amazonía si nos apoyas en este camino.{" "}
+              defender nuestra Amazonía si nos apoyas en este camino.{' '}
               <span className="font-bold">Contáctanos para conocer más</span>
             </p>
             <button
@@ -71,22 +71,22 @@ const Modal = ({ modalState, setModalState }) => {
               </div>
               <button
                 type="submit"
-                className="w-full text-lg md:w-[190px] h-[59px] bg-green-text-2 rounded"
+                className="w-full text-lg md:w-[190px] mb-4 md:mb-0 h-[59px] bg-green-text-2 rounded"
               >
                 Enviar
               </button>
             </form>
           </div>
           <Image
-            className="w-full hidden md:block absolute bottom-[-115px]"
+            className="w-full hidden md:block absolute bottom-[-90px]"
             src={grass}
             width={769.49}
             height={211.63}
           />
           <Image
-            className="absolute hidden md:block bottom-5 right-0"
+            className="absolute hidden md:block bottom-5 -right-14"
             src={rock}
-            width={344}
+            width={374}
             height={135.43}
           />
         </div>
