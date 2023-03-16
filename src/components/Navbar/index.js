@@ -1,31 +1,31 @@
-import { useState } from "react"
-import { Dialog, Popover } from "@headlessui/react"
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
-import Link from "next/link"
-import Image from "next/image"
-import { useRouter } from "next/router"
-import Modal from "../Modal"
+import { useState } from 'react'
+import { Dialog, Popover } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'
+import Image from 'next/image'
+import { useRouter } from 'next/router'
+import Modal from '../Modal'
 
 export default function Example() {
   const menuItems = [
     {
-      label: "Inicio",
-      route: "/",
+      label: 'Inicio',
+      route: '/',
     },
     {
-      label: "Nosotros",
-      route: "/nosotros",
+      label: 'Nosotros',
+      route: '/nosotros',
     },
     {
-      label: "Nuestros Proyectos",
-      route: "/proyectos",
+      label: 'Nuestros Proyectos',
+      route: '/proyectos',
     },
     {
-      label: "Plantas Amazónicas",
-      route: "/plantas-amazonicas",
+      label: 'Plantas Amazónicas',
+      route: '/plantas-amazonicas',
     },
   ]
-  const logo = "/images/logo asoprocegua.jpg"
+  const logo = '/images/logo asoprocegua.jpg'
   const router = useRouter()
   const pathName = router.pathname
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -38,7 +38,7 @@ export default function Example() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link href={"/"} className="-m-1.5 p-1.5">
+          <Link href={'/'} className="-m-1.5 p-1.5">
             <Image src={logo} width={204} height={46.59} alt="logo" />
           </Link>
         </div>
@@ -58,9 +58,9 @@ export default function Example() {
             return (
               <Link
                 key={item.route}
-                className={`${"text-disabled-text font-medium"} ${
+                className={`${'text-disabled-text font-medium'} ${
                   isSelected &&
-                  "relative text-green-text after:block after:w-3 after:h-3 after:content-[` `] after:rounded-3xl after:bg-green-text-2 after:absolute after:bottom-[-15px] after:left-[40%]"
+                  'relative text-green-text after:block after:w-3 after:h-3 after:content-[` `] after:rounded-3xl after:bg-green-text-2 after:absolute after:bottom-[-15px] after:left-[40%]'
                 }`}
                 href={item.route}
               >
@@ -105,7 +105,7 @@ export default function Example() {
                     <Link
                       key={item.route}
                       className={
-                        "text-disabled-text font-medium -mx-3 block rounded-lg py-2 px-3 text-base leading-7"
+                        'text-disabled-text font-medium -mx-3 block rounded-lg py-2 px-3 text-base leading-7'
                       }
                       href={item.route}
                       onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -114,6 +114,18 @@ export default function Example() {
                     </Link>
                   )
                 })}
+                <div className="flex w-full">
+                  <button
+                    onClick={() => setModalState(!modalState)}
+                    className="bg-green-text-2 w-full h-[59px] text-lg"
+                  >
+                    Contáctanos
+                  </button>
+                  <Modal
+                    modalState={modalState}
+                    setModalState={setModalState}
+                  />
+                </div>
               </div>
             </div>
           </div>

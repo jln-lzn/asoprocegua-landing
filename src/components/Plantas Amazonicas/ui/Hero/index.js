@@ -1,16 +1,16 @@
-import Modal from "@/components/Modal"
-import Image from "next/image"
-import { useState } from "react"
+import Modal from '@/components/Modal'
+import Image from 'next/image'
+import { useState } from 'react'
 
 const Hero = () => {
   const [modalState, setModalState] = useState(false)
-  const left_plant = "/images/left plant.svg"
-  const right_plant = "/images/right plant.svg"
-  const arrow = "/images/arrow.svg"
+  const left_plant = '/images/left plant.svg'
+  const right_plant = '/images/right plant.svg'
+  const arrow = '/images/arrow.svg'
 
   return (
     <section className="bg-[#fdfdfd]">
-      <div className="flex items-center md:h-[40vh] md:mt-36 justify-center font-sans relative">
+      <div className="flex items-center md:h-full md:mt-36 justify-center font-sans relative">
         <Image
           src={left_plant}
           className="absolute -top-10 hidden left-0 z-0 md:block opacity-100"

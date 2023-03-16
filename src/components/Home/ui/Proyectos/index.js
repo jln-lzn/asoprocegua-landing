@@ -7,7 +7,7 @@ const Proyectos = () => {
   const img3 = '/images/img3.png'
 
   return (
-    <section className="md:h-[90vh] mb-10 md:pb-36 lg:pb-0 bg-[#fdfdfd] overflow-hidden flex items-center flex-col justify-center font-sans mt-6 px-5">
+    <section className="md:h-full mb-5 md:pb-[200px] lg:pb-[100px] bg-[#fdfdfd] overflow-hidden flex items-center flex-col justify-center font-sans mt-6 px-5">
       <div className="w-full">
         <h2 className="text-left mx-1 text-4xl md:text-5xl leading-[33.89px] font-medium md:text-center mb-8">
           Nuestros proyectos

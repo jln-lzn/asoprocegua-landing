@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <section className="bg-[#fdfdfd]">
-      <div className="flex items-center md:h-[40vh] md:mt-36 justify-center font-sans relative">
+      <div className="flex items-center md:h-full md:mt-36 justify-center font-sans relative">
         <Image
           src={left_plant}
           className="absolute -top-10 hidden left-0 z-0 md:block opacity-100"

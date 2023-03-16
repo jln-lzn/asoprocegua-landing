@@ -18,10 +18,10 @@ const Hero = () => {
   const bg_plant = '/images/bg plant.svg'
 
   return (
-    <>
-      <section className="md:h-screen bg-[#F8F8F8] flex items-center justify-center font-sans relative">
+    <div className="bg-[#F8F8F8]">
+      <section className="md:h-screen flex items-center justify-center font-sans relative">
         <div className="w-full max-w-2xl flex flex-col justify-center items-center gap-5 p-4 md:max-w-3xl lg:max-w-4xl 2xl:max-w-6xl">
-          <h2 className="text-left text-4xl leading-[38.73px] md:leading-[62.93px] font-medium md:text-center md:text-6xl z-30">
+          <h2 className="text-left text-4xl leading-[38.73px] md:leading-[62.93px] font-medium md:text-center md:text-[55px] z-30">
             Nuestra misión es representar a los campesinos del Guaviare,
             consolidar cadenas productivas con valor agregado.
           </h2>
@@ -61,37 +61,37 @@ const Hero = () => {
           <img
             src={bird}
             alt="bird"
-            className="absolute hidden transition-all duration-75 ease-out md:block top-5 right-[250px] z-10"
+            className="absolute hidden transition-all duration-75 ease-out md:block top-0 right-[250px] z-10"
           />
           <img
             src={big_bush}
             alt="big_bush"
-            className="absolute w-[169.58px] transition-all duration-75 ease-out md:w-auto left-[-10px] lg:left-[-70px] bottom-[-10px] lg:bottom-[-30px] z-10"
+            className="absolute w-[169.58px] transition-all duration-75 ease-out md:w-auto left-[-30px] lg:left-[-70px] bottom-[-43px] lg:bottom-[-43px] z-10"
           />
           <img
             src={small_bush}
             alt="small_bush"
-            className="absolute w-[107.69px] transition-all duration-75 ease-out md:w-auto left-24 lg:left-[200px] bottom-[-10px] lg:bottom-[-30px] z-20"
+            className="absolute w-[107.69px] transition-all duration-75 ease-out md:w-auto left-24 lg:left-[200px] bottom-[-43px] lg:bottom-[-43px] z-20"
           />
           <img
             src={big_bush}
             alt="big_bush"
-            className="absolute w-[169.58px] transition-all duration-75 ease-out md:w-auto right-0 bottom-[-30px] z-10"
+            className="absolute w-[169.58px] transition-all duration-75 ease-out md:w-auto right-0 bottom-[-43px] z-10"
           />
           <img
             src={small_bush}
             alt="small_bush"
-            className="absolute w-[107.69px] transition-all duration-75 ease-out md:w-auto right-24 lg:right-[280px] bottom-[-20px] z-10"
+            className="absolute w-[107.69px] transition-all duration-75 ease-out md:w-auto right-24 lg:right-[280px] bottom-[-40px] z-10"
           />
           <img
             src={animal}
             alt="animal"
-            className="absolute w-[119.68px] transition-all duration-75 ease-out md:w-auto left-24 lg:left-[280px] bottom-0 z-10"
+            className="absolute w-[119.68px] transition-all duration-75 ease-out md:w-auto left-24 lg:left-[280px] bottom-[-40px] z-10"
           />
           <img
             src={bg_tree1}
             alt="tree1"
-            className="absolute w-[206px] transition-all duration-75 ease-out md:w-auto left-0 bottom-0"
+            className="absolute w-[206px] transition-all duration-75 ease-out md:w-auto left-0 bottom-[-10px]"
           />
           <img
             src={bg_tree1}
@@ -121,13 +121,13 @@ const Hero = () => {
           <img
             src={bg_tree3}
             alt="tree3"
-            className="absolute w-[129.08px] md:w-auto transition-all duration-75 ease-out scale-x-[-1] right-0 bottom-0"
+            className="absolute w-[129.08px] md:w-auto transition-all duration-75 ease-out scale-x-[-1] right-0 bottom-[-90px]"
           />
         </div>
       </section>
       <Modal modalState={modalState} setModalState={setModalState} />
-      <div className="w-full h-[131px] bg-[#3D7D40]"></div>
-    </>
+      <div className="w-full h-[131px] mt-9 bg-[#3D7D40]"></div>
+    </div>
   )
 }
 
