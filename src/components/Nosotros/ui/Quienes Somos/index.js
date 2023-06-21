@@ -4,7 +4,7 @@ const QuienesSomos = () => {
   const circles = '/images/circles.svg'
   const img7 = '/images/img7.png'
   const img8 = '/images/img8.png'
-  const img9 = '/images/img9.png'
+  const img4 = '/images/img4.png'
 
   return (
     <>
@@ -71,11 +71,11 @@ const QuienesSomos = () => {
             alt="img8"
           />
           <Image
-            src={img9}
-            className="absolute w-40 md:w-52 bottom-[-170px] right-0 2xl:w-[343px] 2xl:top-[50px] 2xl:bottom-auto"
+            src={img4}
+            className='absolute w-40 md:w-52 bottom-[-170px] right-0 2xl:w-[343px] 2xl:top-[50px] 2xl:bottom-auto'
             width={343}
             height={427}
-            alt="img9"
+            alt='img4'
           />
         </div>
       </div>

@@ -18,12 +18,14 @@ const Hero = () => {
   const bg_plant = '/images/bg plant.svg'
 
   return (
-    <div className="bg-[#F8F8F8]">
-      <section className="md:h-screen flex items-center justify-center font-sans relative">
-        <div className="w-full max-w-2xl flex flex-col justify-center items-center gap-5 p-4 md:max-w-3xl lg:max-w-4xl 2xl:max-w-6xl">
-          <h2 className="text-left text-4xl leading-[38.73px] md:leading-[62.93px] font-medium md:text-center md:text-[55px] z-30">
-            Nuestra misión es representar a los campesinos del Guaviare,
-            consolidar cadenas productivas con valor agregado.
+    <div className='bg-[#F8F8F8]'>
+      <section className='md:h-screen flex items-center justify-center font-sans relative'>
+        <div className='w-full max-w-2xl flex flex-col justify-center items-center gap-5 p-4 md:max-w-3xl lg:max-w-4xl 2xl:max-w-6xl'>
+          <h2 className='text-left text-4xl leading-[38.73px] md:leading-[62.93px] font-medium md:text-center md:text-[55px] z-30'>
+            Nuestra misión es representar a los pequeños y medianos productores
+            del Guaviare, consolidar cadenas productivas de los producto
+            forestal no maderable del bosque (PFNMB) y los frutales amazónicos
+            con valor agregado.
           </h2>
           <div className="w-full flex justify-left md:justify-center z-10">
             <hr className="w-full max-w-[160px] border-t-4 border-[#9DCA55] border-l-0 border-r-0" />

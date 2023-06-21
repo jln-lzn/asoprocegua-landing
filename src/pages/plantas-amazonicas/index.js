@@ -1,6 +1,7 @@
-import Beneficios from "@/components/Plantas Amazonicas/ui/Beneficios"
-import Hero from "@/components/Plantas Amazonicas/ui/Hero"
-import Head from "next/head"
+import Beneficios from '@/components/Plantas Amazonicas/ui/Beneficios'
+import Hero from '@/components/Plantas Amazonicas/ui/Hero'
+import Resolution from '@/components/Resolution'
+import Head from 'next/head'
 
 const plantas_amazonicas = () => {
   return (
@@ -10,6 +11,7 @@ const plantas_amazonicas = () => {
       </Head>
       <Hero />
       <Beneficios />
+      <Resolution />
     </>
   )
 }

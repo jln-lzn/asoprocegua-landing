@@ -29,11 +29,11 @@ const Hero = () => {
           <div className="w-full flex justify-start md:justify-center z-[33]">
             <hr className="w-full max-w-[160px] border-t-4 border-[#9DCA55] border-l-0 border-r-0" />
           </div>
-          <p className="text-left leading-[34.1px] md:leading-[34.1px] text-disabled-text text-xl md:text-center z-30">
-            Nuestra misión es representar a los campesinos del Guaviare,
-            consolidar cadenas productivas con valor agregado. Desarrollar
-            proyectos agropecuarios, frutales amazónicos, maderables y no
-            maderables del bosque y de liderazgo comunitario, turístico y
+          <p className='text-left leading-[34.1px] md:leading-[34.1px] text-disabled-text text-xl md:text-center z-30'>
+            Nuestra misión es representar a los pequeños y medianos productores
+            del Guaviare, consolidar cadenas productivas con valor agregado.
+            Desarrollar proyectos agropecuarios, frutales amazónicos, maderables
+            y no maderables del bosque y de liderazgo comunitario, turístico y
             ambiental.
           </p>
           <button
